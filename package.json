@@ -15,7 +15,6 @@
   "main": "dist/your-package-name.js",
   "types": "dist/your-package-name.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "vite src",
     "build": "tsc && vite build"
   },
