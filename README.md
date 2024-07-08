@@ -89,12 +89,17 @@ In the package.json, make sure the `main` and the `types` options are pointing t
         "main": "dist/your-package-name.js",
         "types": "dist/your-package-name.d.ts",
         "scripts": {
+            "test": "vitest",
             "dev": "vite src",
-            "build": "tsc && vite build"
+            "build": "vitest && tsc && vite build",
+            "prepublish": "vite build && npm login --scope=@maptrip",
+            "publish": "npm publish --access public"
+
         },
         "devDependencies": {
             "typescript": "^5.4.5",
-            "vite": "^5.2.0"
+            "vite": "^5.2.0",
+            "vitest": "^1.6.0"
         },
         "dependencies": {
             "vite-plugin-dts": "^3.9.0"
