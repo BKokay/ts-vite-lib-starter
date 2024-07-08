@@ -1,15 +1,16 @@
-# TypeScript & Vite npm library starter template
+# TypeScript, Vite & Vitest npm library starter template
 
-A starter template for an npm library written in TypeScript and compiled using tsc && vite build. The relevant files are the `tsconfig.json` `vite.config.js` and `package.json`.
+A starter template for an npm library written in TypeScript.. The relevant files are the `tsconfig.json` `vite.config.js` and `package.json`. For more information on publishing npm packages at infoware, see the [wiki](http://iwwiki.iw04.local/mediawiki/index.php/Publishing_npm_packages)
 
 In the `/lib` folder, there are is an example class, function, and interface declaration as well as a `main.ts` which imports and exports all of these files for the library mode.
 
-To use this template, simply clone the repo and the replace the remote `origin` with the url of your new library's empty repo.
+To use this template, clone the repo and the replace the remote `origin` with the url of your new library's empty repo.
 
 ```
     git clone /url/to/template mynewrepo
     cd mynewrepo
     git remote set-url origin /url/of/new/empty/repo
+    git install
     git push -u origin master
 ```
 
@@ -105,3 +106,4 @@ In the package.json, make sure the `main` and the `types` options are pointing t
             "vite-plugin-dts": "^3.9.0"
         }
     }
+

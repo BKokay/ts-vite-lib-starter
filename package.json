@@ -15,8 +15,12 @@
   "main": "dist/your-package-name.js",
   "types": "dist/your-package-name.d.ts",
   "scripts": {
+    "test": "vitest",
     "dev": "vite src",
-    "build": "tsc && vite build"
+    "build": "vitest && tsc && vite build",
+    "prepublish": "vite build && npm login --scope=@maptrip",
+    "publish": "npm publish --access public"
+
   },
   "devDependencies": {
     "typescript": "^5.4.5",
